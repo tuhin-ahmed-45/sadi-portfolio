@@ -10,6 +10,7 @@ import { MdAlternateEmail, MdCall } from 'react-icons/md';
 export default function Home() {
   return (
     <main className="container space-y-28 mx-auto px-4 md:px-8 scroll-smooth">
+      {/* Hero */}
       <section className="flex items-center justify-between py-12">
         {/* Left Content */}
         <div className="space-y-5 flex-1">
@@ -17,7 +18,7 @@ export default function Home() {
           <h1 className="font-bold text-4xl md:text-5xl">
             I&apos;m Fauzan Sadi.
           </h1>
-          <p className="mt-3 text-gray-500 leading-relaxed">
+          <p className="mt-3  leading-relaxed">
             An animator with a passion for bringing stories to life
             through innovative and visually stunning animations.
           </p>
@@ -48,9 +49,11 @@ export default function Home() {
       {/* About Me */}
       <section className="py-20">
         <h1 className="text-center text-4xl font-bold">About Me</h1>
-        <p className="text-center mt-3 text-gray-500 leading-relaxed">
-          I offer high-quality 2D Illustration and 2D Animation services, tailored to meet your specific needs.
-          Whether you&apos;re looking to enhance your branding, create compelling storytelling, or bring your ideas
+        <p className="text-center mt-3 leading-relaxed">
+          I offer high-quality 2D Illustration and 2D Animation services, tailored to meet your
+          specific needs.
+          Whether you&apos;re looking to enhance your branding, create compelling storytelling, or
+          bring your ideas
           to life through animation, I am here to help you achieve your vision.
         </p>
 
