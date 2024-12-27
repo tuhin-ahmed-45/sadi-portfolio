@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-   @apply font-poppins;
+   @apply font-poppins bg-[url('/logo.png')] bg-no-repeat bg-center bg-cover;
 }
 
 @layer base {
@@ -61,4 +61,15 @@ body {
       --chart-4: 280 65% 60%;
       --chart-5: 340 75% 55%;
    }
+}
+
+.watermark {
+   position: absolute;
+   inset: 0;
+   background-image: url("/logo.png");
+   background-size: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   opacity: 0.1; /* Adjust for desired transparency */
+   z-index: -1; /* Ensure it's behind all other content */
 }

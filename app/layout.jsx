@@ -16,7 +16,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
    return (
       <html lang="en" className={poppins.className}>
-         <body className="bg-purple-dark dark:bg-purple-light min-h-screen">
+         <body className="relative bg-purple-dark dark:bg-purple-light min-h-screen">
+         <div className="watermark"></div>
             <ThemeProvider
                attribute="class"
                defaultTheme="system"
