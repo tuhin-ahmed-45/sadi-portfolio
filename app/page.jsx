@@ -57,8 +57,8 @@ export default function Home() {
           to life through animation, I am here to help you achieve your vision.
         </p>
 
-        <div className="py-16">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-9">
+        <div className="py-16 md:px-20">
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-9">
             {/* Personal Information Box */}
             <div className="md:col-span-3 space-y-4">
               <h1 className="text-2xl font-bold text-center md:text-left">Personal Information</h1>
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
 
             {/* Qualification Box */}
-            <div className="md:col-span-6 space-y-4">
+            <div className="md:col-span-3 space-y-4">
               <h1 className="text-2xl font-bold text-center md:text-left">Qualifications</h1>
               <div className="flex gap-5">
                 <div className="space-y-2">
@@ -120,24 +120,30 @@ export default function Home() {
                     Experience
                   </h2>
                   <div>
-                    <h2 className="text-lg font-semibold">2D raster animation and illustration</h2>
+                    <h2 className="text-lg font-semibold">2D raster animation, illustration and Krita </h2>
                     <p>2 Years</p>
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* Skills Box */}
-            <div className="md:col-span-3 space-y-4">
-              <h1 className="text-2xl font-bold text-center md:text-left">Skills</h1>
-              <ul className="list-disc pl-5">
-                <li>Web Development (HTML, CSS, JavaScript, React)</li>
-                <li>Backend Development (Node.js, MongoDB)</li>
-                <li>Version Control (Git, GitHub)</li>
-                <li>Problem Solving and Critical Thinking</li>
-              </ul>
-            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Recent Project */}
+      <section>
+        <h1 className="text-center text-4xl font-bold">Show Reel</h1>
+        <div className="flex items-center justify-center h-screen">
+          <video
+            className="w-full max-w-5xl rounded-lg shadow-lg"
+            controls
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/project/volt.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
     </main>
