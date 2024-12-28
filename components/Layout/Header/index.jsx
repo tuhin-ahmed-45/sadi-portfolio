@@ -19,7 +19,7 @@ const Header = () => {
 
     return (
         <header
-            className={`sticky top-0 z-50 mb-16 transition-all duration-300 ${isScrolled ? "bg-purple-dark dark:bg-purple-light shadow-lg py-2" : "bg-transparent"
+            className={`sticky top-0 z-50 mb-10 transition-all duration-300 ${isScrolled ? "bg-purple-dark dark:bg-purple-light shadow-lg py-2" : "bg-transparent"
                 }`}
         >
             <div className="py-3 container mx-auto flex items-center justify-between ">

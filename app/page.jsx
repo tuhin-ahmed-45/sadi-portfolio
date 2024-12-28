@@ -11,14 +11,24 @@ export default function Home() {
   return (
     <main className="container space-y-28 mx-auto px-4 md:px-8 scroll-smooth">
       {/* Hero */}
-      <section className="flex items-center justify-between py-12">
+      <section className="flex flex-col space-y-5 items-center justify-between">
+        {/* Right Content */}
+        <div className="flex justify-center">
+          <Image
+            src="/hero/hero.png"
+            width={300}
+            height={300}
+            className="rounded-full object-cover"
+            alt="Hero Image"
+            priority
+          />
+        </div>
         {/* Left Content */}
-        <div className="space-y-5 flex-1">
-          <h2 className="text-primary text-2xl font-semibold">Hello!</h2>
+        <div className="flex items-center flex-col space-y-5 text-center">
           <h1 className="font-bold text-4xl md:text-5xl">
             I&apos;m Fauzan Sadi.
           </h1>
-          <p className="mt-3  leading-relaxed">
+          <p className="mt-3 leading-relaxed">
             An animator with a passion for bringing stories to life
             through innovative and visually stunning animations.
           </p>
@@ -33,19 +43,23 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right Content */}
-        <div className="flex-1 flex justify-center md:justify-end">
-          <Image
-            src="/hero/hero.png"
-            width={300}
-            height={300}
-            className="rounded-full object-cover"
-            alt="Hero Image"
-            priority
-          />
+      </section>
+      {/* Recent Project */}
+      <section>
+        <h1 className="text-center text-4xl font-bold">Show Reel</h1>
+        <div className="flex items-center justify-center h-screen">
+          <video
+            className="w-full max-w-5xl rounded-lg shadow-lg"
+            controls
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/project/volt.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
-
       {/* About Me */}
       <section className="py-20">
         <h1 className="text-center text-4xl font-bold">About Me</h1>
@@ -120,30 +134,13 @@ export default function Home() {
                     Experience
                   </h2>
                   <div>
-                    <h2 className="text-lg font-semibold">2D raster animation, illustration and Krita </h2>
+                    <h2 className="text-lg font-semibold">2D raster animation and illustration</h2>
                     <p>2 Years</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Recent Project */}
-      <section>
-        <h1 className="text-center text-4xl font-bold">Show Reel</h1>
-        <div className="flex items-center justify-center h-screen">
-          <video
-            className="w-full max-w-5xl rounded-lg shadow-lg"
-            controls
-            autoPlay
-            muted
-            loop
-          >
-            <source src="/project/volt.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
         </div>
       </section>
     </main>
