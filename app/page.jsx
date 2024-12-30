@@ -9,7 +9,7 @@ import { MdAlternateEmail, MdCall } from 'react-icons/md';
 
 export default function Home() {
   return (
-    <main className="container space-y-28 mx-auto px-4 md:px-8 scroll-smooth">
+    <main className="container space-y-12 md:space-y-28 mx-auto px-4 md:px-8 scroll-smooth">
       {/* Hero */}
       <section className="flex flex-col space-y-5 items-center justify-between">
         {/* Right Content */}
@@ -44,10 +44,11 @@ export default function Home() {
         </div>
 
       </section>
+
       {/* Recent Project */}
-      <section>
+      <section className="flex flex-col space-y-20 items-center">  
         <h1 className="text-center text-4xl font-bold">Show Reel</h1>
-        <div className="flex items-center justify-center h-screen">
+        
           <video
             className="w-full max-w-5xl rounded-lg shadow-lg"
             controls
@@ -58,7 +59,7 @@ export default function Home() {
             <source src="/project/volt.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </div>
+    
       </section>
       {/* About Me */}
       <section className="py-20">
