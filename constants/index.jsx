@@ -45,14 +45,20 @@ export const projects = [
     },
     {
         id: 2,
-        name: "Volt",
-        description: "Volt is an electrifying character known for his speed and agility. With the ability to harness and control electricity, Volt can move at lightning-fast speeds and deliver powerful electric shocks to his enemies. His sleek design and dynamic personality make him a standout character in any animation.",
+        name: "Hercules",
+        description: "This illustration depicts a bold reinterpretation of Hercules as a modern, action-oriented character. The figure wears a leather jacket emblazoned with 'HERCULES' holding a crowbar-like weapon against a dramatic gradient background. The composition exudes strength and mystery, combining classic heroism with contemporary urban aesthetics.",
         image: "/project/2.jpg",
     },
     {
         id: 3,
-        name: "Volt",
-        description: "Volt is an electrifying character known for his speed and agility. With the ability to harness and control electricity, Volt can move at lightning-fast speeds and deliver powerful electric shocks to his enemies. His sleek design and dynamic personality make him a standout character in any animation.",
+        name: "Traditional Spider-Man",
+        description: "This illustration humorously reimagines Spider-Man with a signature Bengali vibrant green and red costume, blending local cultural flair. Speech bubbles in Bengali add comedic commentary, with a crowd of silhouettes in the background cheering the hero. The piece creatively merges pop culture with regional elements, making it distinct and engaging.",
+        image: "/project/4.jpg",
+    },
+    {
+        id: 4,
+        name: "Landscape",
+        description: "The landscape is dominated by rolling green mountains, their slopes covered in rich, verdant vegetation. In the foreground, a calm blue lake mirrors the clear sky above, creating a serene and peaceful atmosphere. The vibrant greens of the hills contrast beautifully with the deep blue of the water, offering a breathtaking view of nature's harmony.",
         image: "/project/3.jpg",
     },
 ]
@@ -61,19 +67,16 @@ export const videoProject = [
     {
         id: 1,
         title: "TYPES OF BENGALI STUDENTS | ft. SCHOOL | VOLT",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, saepe?",
         url: "https://www.youtube.com/embed/fGEGnAjuKHk?si=GuJoKrOylDzll_Pb",
     },
     {
         id: 2,
         title: "INTRODUCING VOLT | not Ft. Antik Mahmud and R.G bucket list",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, saepe?",
         url: "https://www.youtube.com/embed/wwWKup47m84?si=1aK6o4JU30YH1r1F",
     },
     {
         id: 3,
         title: "I BROKE MY TOE | FT. WINTER | story time",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, saepe?",
         url: "https://www.youtube.com/embed/AEPKtbMjLIk?si=0Z0YoFg9E8JZMbKL",
     },
 ]

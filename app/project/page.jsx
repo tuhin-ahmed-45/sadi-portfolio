@@ -29,7 +29,6 @@ function ProjectPage() {
 
               <div className="space-y-2 mt-4">
                 <h3 className="text-lg font-semibold">{video?.title}</h3>
-                <p>{video?.description}</p>
               </div>
             </div>
           ))}
