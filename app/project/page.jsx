@@ -1,6 +1,6 @@
-import ProjectCard from "@/components/reusable/ProjectCard";
-import { projects, videoProject } from "@/constants";
+import { videoProject } from "@/constants";
 import { Brush, Youtube } from "lucide-react";
+import Artwork from "./_components/Artwork";
 
 function ProjectPage() {
   return (
@@ -39,11 +39,7 @@ function ProjectPage() {
           <Brush />
           Artwork
         </h2>
-        <div className="grid grid-cols-3 gap-4 mt-8">
-          {projects?.map((project) => (
-            <ProjectCard key={project?.id} project={project} />
-          ))}
-        </div>
+        <Artwork />
       </section>
     </main >
   );

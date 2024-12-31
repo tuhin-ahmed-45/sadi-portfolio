@@ -69,6 +69,7 @@ body {
    background-image: url("/logo.png");
    background-size: 100%;
    background-position: center;
+   background-attachment: fixed;
    background-repeat: no-repeat;
    opacity: 0.1; /* Adjust for desired transparency */
    z-index: -1; /* Ensure it's behind all other content */
