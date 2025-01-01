@@ -50,66 +50,72 @@ export default function Home() {
 
       {/* About Me */}
       <section className="py-12 md:py-20">
-        <h1 className="text-center text-3xl md:text-4xl font-bold">About Me</h1>
-        <p className="text-center mt-3 leading-relaxed max-w-4xl mx-auto">
-          I offer high-quality 2D Illustration and 2D Animation services, tailored to meet your specific needs.
-          Whether you&apos;re looking to enhance your branding, create compelling storytelling, or bring your ideas
-          to life through animation, I am here to help you achieve your vision.
+        <h1 className="text-center text-3xl md:text-4xl font-bold mb-6">About Me</h1>
+        <p className="text-center leading-relaxed max-w-4xl mx-auto mb-12">
+          I specialize in high-quality 2D Illustration and Animation services, tailored to meet your unique needs. Whether you're enhancing your branding, creating compelling stories, or visualizing your ideas through animation, I'm here to bring your vision to life.
         </p>
-        <div className="py-10 md:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-6 gap-9">
-            {/* Personal Information */}
-            <div className="md:col-span-3 space-y-4">
-              <h1 className="text-2xl font-bold text-center md:text-left">Personal Information</h1>
-              <div className="space-y-4">
-                <h2 className="flex items-center">
-                  <IoPerson className="text-primary text-lg mr-2" />
-                  Golam Fauzan Sadi
-                </h2>
-                <h2 className="flex items-center">
-                  <MdAlternateEmail className="text-primary text-lg mr-2" />
-                  gfsvoltmanager@gmail.com
-                </h2>
-                <h2 className="flex items-center">
-                  <MdCall className="text-primary text-lg mr-2" />
-                  +8801331402578
-                </h2>
-                <h2 className="flex items-center">
-                  <IoMdHome className="text-primary text-lg mr-2" />
-                  Narayanganj, Dhaka, Bangladesh
-                </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-6 lg:px-16">
+          {/* Personal Information */}
+          <div>
+            <h2 className="text-2xl font-bold mb-6 text-center md:text-left">Personal Information</h2>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <IoPerson className="text-primary text-2xl" />
+                <p className="text-lg">Golam Fauzan Sadi</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <MdAlternateEmail className="text-primary text-2xl" />
+                <p className="text-lg">
+                  <a href="mailto:gfsvoltmanager@gmail.com" className="hover:text-primary transition-colors">
+                    gfsvoltmanager@gmail.com
+                  </a>
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <MdCall className="text-primary text-2xl" />
+                <p className="text-lg">
+                  <a href="tel:+8801331402578" className="hover:text-primary transition-colors">
+                    +880 1331 402578
+                  </a>
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <IoMdHome className="text-primary text-2xl" />
+                <p className="text-lg">Narayanganj, Dhaka, Bangladesh</p>
               </div>
             </div>
+          </div>
 
-            {/* Qualification */}
-            <div className="md:col-span-3 space-y-4">
-              <h1 className="text-2xl font-bold text-center md:text-left">Qualifications</h1>
-              <div className="flex flex-col gap-5 md:flex-row">
-                <div className="space-y-2">
-                  <h2 className="flex items-center gap-2 text-xl text-primary font-semibold">
-                    <FaGraduationCap size={26} />
-                    Education
-                  </h2>
+          {/* Qualifications */}
+          <div>
+            <h2 className="text-2xl font-bold mb-6 text-center md:text-left">Qualifications</h2>
+            <div className="space-y-8">
+              {/* Education */}
+              <div>
+                <h3 className="flex items-center gap-3 text-xl text-primary font-semibold mb-4">
+                  <FaGraduationCap className="text-primary text-2xl" />
+                  Education
+                </h3>
+                <div className="space-y-3">
                   <div>
-                    <h2 className="text-lg font-semibold">Park Polytechnic Institute</h2>
-                    <p>Diploma in Engineering (CMT)</p>
-                    <p>2022-2026</p>
+                    <h4 className="text-lg font-semibold">Park Polytechnic Institute</h4>
+                    <p className="text-sm">Diploma in Engineering (CMT), 2022–2026</p>
                   </div>
                   <div>
-                    <h2 className="text-lg font-semibold">Aligonj High School</h2>
-                    <p>JSC - SSC</p>
-                    <p>2018-2022</p>
+                    <h4 className="text-lg font-semibold">Aligonj High School</h4>
+                    <p className="text-sm">JSC - SSC, 2018–2022</p>
                   </div>
                 </div>
-                <div className="space-y-2">
-                  <h2 className="flex items-center gap-2 text-xl text-primary font-semibold">
-                    <FaPaintBrush size={20} />
-                    Experience
-                  </h2>
-                  <div>
-                    <h2 className="text-lg font-semibold">2D Raster Animation and Illustration</h2>
-                    <p>2 Years</p>
-                  </div>
+              </div>
+              {/* Experience */}
+              <div>
+                <h3 className="flex items-center gap-3 text-xl text-primary font-semibold mb-4">
+                  <FaPaintBrush className="text-primary text-2xl" />
+                  Experience
+                </h3>
+                <div>
+                  <h4 className="text-lg font-semibold">2D Raster Animation and Illustration</h4>
+                  <p className="text-sm">2 Years of Professional Experience</p>
                 </div>
               </div>
             </div>
