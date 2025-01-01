@@ -1,13 +1,16 @@
-'use client'
+'use client';
 import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 import { navLinks } from "@/constants";
+import { Menu, X } from 'lucide-react';
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+    const closeMenu = () => setIsMenuOpen(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,13 +23,12 @@ const Header = () => {
 
     return (
         <header
-            className={`sticky top-0 z-50 mb-10 transition-all duration-300 ${isScrolled ? "bg-purple-dark dark:bg-purple-light shadow-lg py-2" : "bg-transparent"
-                }`}
+            className={`sticky top-0 z-50 mb-10 transition-all duration-300 ${isScrolled ? "bg-purple-dark dark:bg-purple-light shadow-lg py-2" : "bg-transparent"}`}
         >
-            <div className="py-3 container mx-auto flex items-center justify-between">
+            <div className="py-3 px-2 md:px-0 container mx-auto flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" aria-label="Home">
-                    <Image src="/logo.png" width={140} height={70} alt="GFS Volt" priority />
+                    <Image src="/logo.png" width={140} height={70} className="w-[100px] md:w-[120px]" alt="GFS Volt" priority />
                 </Link>
 
                 {/* Desktop Navigation Links */}
@@ -45,43 +47,41 @@ const Header = () => {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600"
-                    aria-label="Open Menu"
-                    aria-expanded={isMobileMenuOpen}
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    className="lg:hidden text-primary focus:outline-none"
+                    onClick={toggleMenu}
+                    aria-expanded={isMenuOpen}
+                    aria-label="Toggle navigation menu"
                 >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                    >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+                    {isMenuOpen ? <X size={24} /> : <Menu size={30} />}
                 </button>
             </div>
 
             {/* Mobile Navigation */}
-            {isMobileMenuOpen && (
-                <nav className="md:hidden bg-purple-dark dark:bg-purple-light shadow-lg">
-                    <ul className="flex flex-col items-center space-y-4 py-4">
-                        {navLinks.map(({ id, href, name }) => (
-                            <li key={id}>
-                                <Link
-                                    href={href}
-                                    className="text-gray-800 dark:text-white hover:text-primary font-medium transition- 
-                                    colors"
-                                    onClick={() => setIsMobileMenuOpen(false)} // Close menu on link click
-                                >
-                                    {name}
-                                </Link>
+            {isMenuOpen && (
+                <div
+                    id="mobile-menu-overlay"
+                    className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+                    onClick={() => setIsMenuOpen(false)} // Close menu if clicking outside
+                >
+                    <nav className="bg-purple-dark dark:bg-purple-light shadow-lg absolute top-0 right-0 w-3/4 h-full">
+                        <ul className="flex flex-col items-center space-y-4 py-4">
+                            {navLinks.map(({ id, href, name }) => (
+                                <li key={id}>
+                                    <Link
+                                        href={href}
+                                        className="text-white hover:text-primary font-medium transition-colors"
+                                        onClick={() => setIsMenuOpen(false)} // Close menu on link click
+                                    >
+                                        {name}
+                                    </Link>
+                                </li>
+                            ))}
+                            <li>
+                                <ThemeSwitcher />
                             </li>
-                        ))}
-                        <ThemeSwitcher />
-                    </ul>
-                </nav>
+                        </ul>
+                    </nav>
+                </div>
             )}
         </header>
     );
