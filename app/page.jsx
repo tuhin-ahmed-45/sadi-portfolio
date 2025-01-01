@@ -52,7 +52,9 @@ export default function Home() {
       <section className="py-12 md:py-20">
         <h1 className="text-center text-3xl md:text-4xl font-bold mb-6">About Me</h1>
         <p className="text-center leading-relaxed max-w-4xl mx-auto mb-12">
-          I specialize in high-quality 2D Illustration and Animation services, tailored to meet your unique needs. Whether you&apos;re enhancing your branding, creating compelling stories, or visualizing your ideas through animation, I&apos;m here to bring your vision to life.
+          I specialize in high-quality 2D Illustration and Animation services, tailored to meet your unique needs.
+          Whether you&apos;re enhancing your branding, creating compelling stories, or visualizing your ideas through
+          animation, I&apos;m here to bring your vision to life.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-6 lg:px-16">
           {/* Personal Information */}
