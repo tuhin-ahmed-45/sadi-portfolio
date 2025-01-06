@@ -30,6 +30,7 @@ export async function POST(req) {
       }
     });
 
+    // Send email
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
