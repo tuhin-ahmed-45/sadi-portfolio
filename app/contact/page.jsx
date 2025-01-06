@@ -1,7 +1,5 @@
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
-import { ArrowRightIcon, HomeIcon, Mail, MailIcon, MessageSquare, PhoneCall, User } from 'lucide-react'
+import { HomeIcon, MailIcon, PhoneCall } from 'lucide-react'
+import ContactForm from './_components/ContactForm'
 
 const ContactPage = () => {
     return (
@@ -25,24 +23,7 @@ const ContactPage = () => {
                 </div>
 
                 {/* Form */}
-                <form className="flex flex-col gap-y-6">
-                    <div className="relative flex items-center">
-                        <Input type="name" id="name" placeholder="Name" />
-                        <User className="absolute right-4 sm:right-6" size={20} />
-                    </div>
-                    <div className="relative flex items-center">
-                        <Input type="email" id="email" placeholder="Email" />
-                        <Mail className="absolute right-4 sm:right-6" size={20} />
-                    </div>
-                    <div className="relative flex items-center">
-                        <Textarea id="message" placeholder="Message" />
-                        <MessageSquare className="absolute top-4 right-4 sm:right-6" size={20} />
-                    </div>
-                    <Button className="flex items-center justify-center gap-x-2 w-full sm:max-w-xs">
-                        Let&apos;s Talk
-                        <ArrowRightIcon size={20} />
-                    </Button>
-                </form>
+                <ContactForm/>
             </div>
         </div>
     )

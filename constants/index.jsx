@@ -86,13 +86,13 @@ export const services = [
         id: 1,
         title: "2D Animation",
         description: "Elevate your projects with dynamic and expressive 2D animations. From explainer videos to character-driven stories I bring movement to your ideas in a smooth and visually captivating way.",
-        img: "/service/brush.svg",
+        img: "/service/ball.svg",
     },
     {
         id: 2,
         title: "2D Illustration",
         description: "Bring your concepts to life with unique, custom illustrations. Whether it’s for marketing materials, product designs, book covers or character design, I specialize in creating visually engaging and professional artwork that tells your story.",
-        img: "/service/ball.svg",
+        img: "/service/brush.svg",
     },
-    
+
 ]

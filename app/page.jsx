@@ -30,10 +30,18 @@ export default function Home() {
             An animator with a passion for bringing stories to life through innovative and visually stunning animations.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-5">
-            <Button className="px-6 py-3 flex items-center space-x-2 text-sm rounded-full">
-              <span>Resume</span>
-              <Download size={18} />
-            </Button>
+            {/* Download Resume Button */}
+            <Link
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Fauzan_Sadi_Resume.pdf"
+            >
+              <Button className="px-6 py-3 flex items-center space-x-2 text-sm rounded-full">
+                <span>Resume</span>
+                <Download size={18} />
+              </Button>
+            </Link>
             <SocialLink />
           </div>
         </div>
