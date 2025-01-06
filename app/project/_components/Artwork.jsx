@@ -76,7 +76,7 @@ const Artwork = () => {
               </div>
               <div className="mt-4">
                 <p className="text-sm">
-                  Artwork by <span className="font-semibold text-primary">Fauzan Sadi</span>
+                  Artwork by <span className="font-semibold text-primary">Faujan Sadi</span>
                 </p>
               </div>
             </div>

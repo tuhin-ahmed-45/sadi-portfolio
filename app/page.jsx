@@ -25,7 +25,7 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col items-center space-y-5">
-          <h1 className="font-bold text-3xl md:text-5xl">I&apos;m Fauzan Sadi.</h1>
+          <h1 className="font-bold text-3xl md:text-5xl">I&apos;m Faujan Sadi.</h1>
           <p className="mt-3 leading-relaxed max-w-2xl">
             An animator with a passion for bringing stories to life through innovative and visually stunning animations.
           </p>
@@ -35,7 +35,7 @@ export default function Home() {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              download="Fauzan_Sadi_Resume.pdf"
+              download="Faujan_Sadi_Resume.pdf"
             >
               <Button className="px-6 py-3 flex items-center space-x-2 text-sm rounded-full">
                 <span>Resume</span>
@@ -71,7 +71,7 @@ export default function Home() {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <IoPerson className="text-primary text-2xl" />
-                <p className="text-lg">Golam Fauzan Sadi</p>
+                <p className="text-lg">Golam Faujan Sadi</p>
               </div>
               <div className="flex items-center gap-3">
                 <MdAlternateEmail className="text-primary text-2xl" />
