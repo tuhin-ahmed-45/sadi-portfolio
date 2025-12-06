@@ -61,6 +61,18 @@ export const projects = [
         description: "The landscape is dominated by rolling green mountains, their slopes covered in rich, verdant vegetation. In the foreground, a calm blue lake mirrors the clear sky above, creating a serene and peaceful atmosphere. The vibrant greens of the hills contrast beautifully with the deep blue of the water, offering a breathtaking view of nature's harmony.",
         image: "/project/3.jpg",
     },
+    {
+        id: 5,
+        name: "HERO HUNDRED",
+        description: `This vibrant book cover, titled "HERO HUNDRED VOLT SAGA 1," blends a classic manga aesthetic with a superhero theme, presenting a dynamic scene split between a bright, cloudy sky and a dark, cosmic void. In the foreground, the determined protagonist, Hero Hundred, with striking purple hair, lunges forward, extending a hand dramatically toward the viewer. The background hints at the scale of the "Volt Saga" with a diverse cast of characters: below him are multiple figures, including a skeletal black-and-white armored entity, a character riding an elephant-like beast, and other heroes or villains engaged in large-scale conflict, suggesting an action-packed story involving cosmic battles and multiple powered individuals`,
+        image: "/project/hero-hundred.jpg",
+    },
+    {
+        id: 6,
+        name: "BD-TIGER",
+        description: `This striking digital illustration introduces the character BD TIGER, clearly labeled as "A VOLT VERSE HERO." The artwork focuses on the character's muscular back and his intense transformation, seen through the dramatic appearance of his left arm, which is covered in a dark, armored, or mechanical substance marked by glowing red cracks and stripes. This red-and-black palette, combined with the dim lighting and the single red glow from his visible eye, creates a powerful and action-ready atmosphere. The figure is looking back over his shoulder with a determined, masked expression, while the large text "BD TIGER" and the smaller text "can't stop him" emphasize his central role and formidable nature within the "Volt Verse" narrative.`,
+        image: "/project/bd-tiger.jpg",
+    },
 ]
 
 export const videoProject = [

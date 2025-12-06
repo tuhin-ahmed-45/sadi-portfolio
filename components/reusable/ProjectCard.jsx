@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
                 <h2 className="font-semibold text-secondary-foreground text-xl">
                     {project?.name || "Project Name"}
                 </h2>
-                <p className="text-secondary-foreground text-sm">
+                <p className="text-secondary-foreground text-sm line-clamp-4">
                     {project?.description || "No description available."}
                 </p>
             </div>
